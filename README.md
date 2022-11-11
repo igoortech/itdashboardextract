@@ -33,10 +33,10 @@
 <table>
   <tr>
   <td>Python</td>
-  <td> ChromeDriver</td>
+  <td> chromedriver-autoinstaller</td>
   </tr>
   <td>3.10.0</td>
-  <td>97.0.4692.71</td>
+  <td>0.2.2</td>
   <tr>
   </tr> 
 </table>
