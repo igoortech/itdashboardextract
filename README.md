@@ -2,7 +2,7 @@
 
 > Status: ready to homolog ⚠️
 
-### This RPA Solution must open Itdashboard page Portfolio and Advanced Search, get all agencies and montantes, check downlaod then download if there's
+### This RPA Solution must open Itdashboard pages (Portfolio, Advanced Search), get all agencies and montantes, check downlaod then download if there's
 
 ## STEP-1 SET THE VARIABLES INPUT
 + ##### SET THE INPUT FILE FOR ADVANCED SEARCH
