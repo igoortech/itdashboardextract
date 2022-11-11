@@ -4,36 +4,29 @@
 
 ### This RPA Solution must open Itdashboard pages (Portfolio, Advanced Search), get all agencies and montantes, check downlaod then download if there's
 
-## STEP-1 SET THE VARIABLES INPUT
+## STEP-1 SET THE VARIABLES INPUT ON  main.py⚠️
 + ##### SET THE INPUT FILE FOR ADVANCED SEARCH
 +  Agency = "National Science Foundation"
 + ##################################################
 + #BOT NAME
 + bot_name = "It_DashBoard"
-+ #FOLDER OUTPUT AND FILE NAME ALL AGENCIES
-+ FileAgencies = fr".\Output\all_agencies_.xlsx"
-+ #FOLDER OUTPUT AND FILE NAME SINGLE FILE
++ #FOLDER OUTPUT AND FILE NAME
++ FileAgencies = fr".\Output\all_agencies_.xlsx" 
++ #FOLDER OUTPUT AND FILE NAME 
 + FileIndividual = fr".\Output\agencias_individuais.xlsx"
 
-+ then the rest of the code happen in background. Once we open the page and
-+ all the elements exists (oportunities,locale,Detail), the application saves it  in LOCALSTORAGE
+## STEP-2 THE MAIN.PY 
++ this is the main part of the code where all the rest of the logic are call.
++  it has all step by step from the process get all agencies and montant
++ thus get individual datas from agencies and download pdf file
++ every step is logged into .\output\loger⚠️
 
-## STEP-2 GET_OPORTUNITIES
-+ Using Python libs path Libs/LocalStorage.py we are able to get 
-+ all OPORTUNITIES and manipulate it using Json Lib and return as DATA
-
-## STEP-3 EXPORT_TO_EXCEL
-+ Using Python lib Pandas we are able to get all Data(Json) returned and
-+ and generate a DataFrame(Pandas) to convert into a Excel File.
-
-## STEP-4 SEND_EMAIL_TO_AREA
-+ Using a script lib path Libs/SednEmail.py we  are able to send e-mail
-+ to the are with the excel generate
-  #### This step require a SMTP e-mail credentials on line 75 file path  "Libs/SendEmail.py" ⚠️
-
-
-
-
+## STEP-3 FOLDERS STRUCTURES
++ commonfuncoes has all basic most used function to help 
++ commonselenium has all most used and necessary logic from selenium
++ commonlog has all logic used to logs step by step
++ commonitdashboard has all logic used to extract agencies and search individual ones
++ output is the folder where logs and outputs must be saves
 
 
 ### Technologies Used:
@@ -50,4 +43,4 @@
 
 ## How to run the application:
 #### Install: Python
-#### Run Shell: Pip Install -r requirements.txt
+#### Run create_env.bat (it will create the env necessary, activate it and install all necessary requeriments.txt)⚠️⚠️⚠️⚠️⚠️⚠️⚠️
